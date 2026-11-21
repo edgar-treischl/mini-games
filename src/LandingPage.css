@@ -1,0 +1,119 @@
+.mfe-template__landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--mfe-template-bg);
+  color: var(--mfe-template-text);
+  padding: clamp(1rem, 5vw, 3rem);
+}
+
+.mfe-template__landing-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 10vw, 4rem);
+}
+
+.mfe-template__landing-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mfe-template__landing-title {
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+  color: var(--mfe-template-heading);
+}
+
+.mfe-template__landing-subtitle {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  margin: 0;
+  color: var(--mfe-template-text-secondary, var(--mfe-template-text));
+  opacity: 0.75;
+}
+
+.mfe-template__games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.mfe-template__game-card {
+  background: var(--mfe-template-surface);
+  border: 1px solid rgba(0, 152, 212, 0.15);
+  border-radius: 12px;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+  align-items: flex-start;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.mfe-template__game-card:hover {
+  border-color: #0098D4;
+}
+
+.mfe-template__game-card:focus-visible {
+  outline: 2px solid #0098D4;
+  outline-offset: 2px;
+}
+
+.mfe-template__game-card-icon {
+  color: #0098D4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 152, 212, 0.06);
+  border-radius: 8px;
+}
+
+.mfe-template__game-card-title {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 600;
+  margin: 0;
+  color: var(--mfe-template-heading);
+}
+
+.mfe-template__game-card-description {
+  font-size: 0.95rem;
+  margin: 0;
+  color: var(--mfe-template-text-secondary, var(--mfe-template-text));
+  opacity: 0.75;
+  flex-grow: 1;
+  line-height: 1.5;
+}
+
+.mfe-template__game-card-action {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #0098D4;
+  margin-top: auto;
+}
+
+.mfe-template__landing-footer {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 152, 212, 0.08);
+}
+
+.mfe-template__footer-text {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--mfe-template-text-secondary, var(--mfe-template-text));
+  opacity: 0.65;
+}
+
+
